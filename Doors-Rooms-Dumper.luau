@@ -22,7 +22,7 @@ local IsSaving = false;
 local RoomQueue = {};
 
 local SaveRoom = function(room: Model, name)
-    local ssi = loadstring(game:HttpGet("https://raw.githubusercontent.com/luau/UniversalSynSaveInstance/main/saveinstance.luau", true))(); -- the luau org got terminated.
+    local ssi = loadstring(game:HttpGet("https://raw.githubusercontent.com/luau/UniversalSynSaveInstance/main/saveinstance.luau", true))();
     ssi({ ShowStatus = false, ReadMe = false, noscripts = false, Object = room, FilePath = "DOORS_Rooms/DOORS_ROOM_" .. name });
 end;
 local SaveRoomsBeta = false;
